@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/EventPublisher.js":
+/*!*******************************!*\
+  !*** ./src/EventPublisher.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ EventPublisher)\n/* harmony export */ });\n/* harmony import */ var aws_sdk__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! aws-sdk */ \"aws-sdk\");\n/* harmony import */ var aws_sdk__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(aws_sdk__WEBPACK_IMPORTED_MODULE_0__);\n\nconst eventBridge = new aws_sdk__WEBPACK_IMPORTED_MODULE_0__.EventBridge({\n  region: process.env.SERVERLESS_REGION\n});\nclass EventPublisher {\n  static execute(payload = {}, options = {}) {\n    return eventBridge.putEvents(payload).promise();\n  }\n\n}\n\n//# sourceURL=webpack://@owlflow/common/./src/EventPublisher.js?");
+
+/***/ }),
+
 /***/ "./src/Logger.js":
 /*!***********************!*\
   !*** ./src/Logger.js ***!
@@ -26,7 +36,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Logger\": () => (/* reexport safe */ _Logger__WEBPACK_IMPORTED_MODULE_0__.default)\n/* harmony export */ });\n/* harmony import */ var _Logger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Logger */ \"./src/Logger.js\");\n\n\n\n//# sourceURL=webpack://@owlflow/common/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"EventPublisher\": () => (/* reexport safe */ _EventPublisher__WEBPACK_IMPORTED_MODULE_0__.default),\n/* harmony export */   \"Logger\": () => (/* reexport safe */ _Logger__WEBPACK_IMPORTED_MODULE_1__.default)\n/* harmony export */ });\n/* harmony import */ var _EventPublisher__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./EventPublisher */ \"./src/EventPublisher.js\");\n/* harmony import */ var _Logger__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Logger */ \"./src/Logger.js\");\n\n\n\n\n//# sourceURL=webpack://@owlflow/common/./src/index.js?");
+
+/***/ }),
+
+/***/ "aws-sdk":
+/*!**************************!*\
+  !*** external "aws-sdk" ***!
+  \**************************/
+/***/ ((module) => {
+
+module.exports = require("aws-sdk");
 
 /***/ }),
 
