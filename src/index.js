@@ -1,7 +1,7 @@
 import EventPublisher from './EventPublisher'
 import Logger from './Logger'
 
-export {
+module.exports = {
   EventPublisher,
   Logger,
 }
