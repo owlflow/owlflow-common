@@ -1,0 +1,25 @@
+{
+  "name": "@owlflow/common",
+  "version": "1.0.0",
+  "description": "Owlflow Core Lib",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.41.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.938.0",
+    "omit-empty": "^1.0.0",
+    "winston": "^3.3.3"
+  }
+}
