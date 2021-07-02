@@ -26,7 +26,7 @@ function flattenObject (obj, res, prefix = '') {
   return res
 }
 
-export default {
+module.exports = {
   asyncForEach,
   flattenObject
 }
